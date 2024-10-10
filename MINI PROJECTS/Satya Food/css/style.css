@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+body{
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    
+}
+/* Navbar */
+.nav-wrapper{
+    background: black;
+}
+/* navbar */
+/* discrption */
+.move{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.discp{
+    border: 2px solid white;
+    padding: 10px;
+}
+/* menu */
+.order{
+    color: skyblue;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: all 0.10s ease;
+}
+.order_now{
+    margin-top: 50px;
+}
+.order:hover{
+    color: black;
+    background-color: white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+/* menu */
+/* parallax */
+.parallax-container{
+    min-height: 150px;
+    height: auto;
+}
+/* }parallax */
+/* about */
+.about{
+    border: 3px solid black;
+}
+/* about */
+/* services */
+.icon-coffee{
+    color: rgb(0, 255, 242);
+}
+/* services */
+
+/* preloader */
+#preloader{
+    background: #fff url(/images/Pizza\ sliced.gif) no-repeat center center;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
+/* preloader */
+.btn-send{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.message{
+    border: 3px solid white;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    background-color: rgba(212, 98, 21, 0.766);
+}
+.message:hover{
+    box-shadow: 10px 5px #fff;
+   
+
+}
+@media screen and (max-width:950px){
+    .msg-img{
+        display: none;
+    }
+    
+}

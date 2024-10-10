@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satya Foods</title>
+    <link rel="shortcut icon" href="images/Untitled-1 copy.png" type="image/png">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Itim&display=swap" rel="stylesheet">
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- materialize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div id="preloader"></div>
+    <!-- Navbar Starts -->
+    <section class="fnavbar">
+        <nav class="nav-fixed">
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo #ff8f00 amber-text darken-3"style="padding-left:25px !important;" >Satya Food</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#" class="teal-text">Home</a></li>
+                <li><a href="#"onclick="toggleModal();">About</a></li>
+                <li><a href="#" onclick="toggleModal();">Dining</a></li>
+                <li><a href="#" onclick="toggleModal();">Launch</a></li>
+                <li><a href="#" onclick="toggleModal();">Let's go</a></li>
+              </ul>
+            </div>
+          </nav>
+        
+          <ul class="sidenav" id="mobile-demo">
+                <li><a href="#"class="teal-text">Home</a></li>
+                <li><a href="#" onclick="toggleModal();">About</a></li>
+                <li><a href="#" onclick="toggleModal();">Dining</a></li>
+                <li><a href="#" onclick="toggleModal();">Launch</a></li>
+                <li><a href="#" onclick="toggleModal();">Let's go</a></li>
+            
+          </ul>
+        
+    </section>
+    <!-- Navbar Ends -->
+    <!-- Image slider Starts -->
+    <section class="fslider">
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="images/food1.png" alt="image-1">
+                    <div class="caption center-align white-text">
+                        <h3>Fresh, locally-sourced ingredients in every dish"</h3>
+                        <h5 class="white-text ">Taste the spices of South India at our restaurant</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/food2.png" alt="image-1">
+                    <div class="caption center-align white-text">
+                        <h3>Fine dining with a casual atmosphere" </h3>
+                        <h5 class="white-text">Authentic South Indian dishes made with love</h5>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </section>
+    <!-- image slider Ends -->
+    <!-- Discrption Starts -->
+    <section class="descrip">
+        <div class="section black-text center">
+            <h2 class="header orange-text">Satya Foods</h2>
+            <div class="row container center discp">
+                <div class="col center l8 s12 move white-text">
+                    Welcome to Spice of South, a premier restaurant located in the heart of Andhra Pradesh, India. We specialize in authentic South Indian cuisine, offering a delightful variety of dishes that capture the true essence of Southern flavors. Whether you're craving the spicy richness of Andhra-style biryani, the comfort of freshly steamed idlis, or the crispy goodness of dosas, our menu has something to satisfy every palate.
+                </div>
+                <div class="col center l4 s12">
+                    <img src="./images/food6.png"  height="200" width="auto" alt="image">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Discrption Ends -->
+    <!-- Menu Starts -->
+    <section class="fmenu" >
+        <h2 class="header center orange-text">Menu</h2>
+        <div   class="row" style="padding-left: 50px; padding-right: 50px;" id="menu">
+        <div  class="col s12 m12 l4" style="padding: 50px 20px;">
+            <div  class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/food5.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">BREAKFAST<i class="material-icons right">more_vert</i></span>
+                  
+                </div>
+                <div class="card-reveal black">
+                  <span class="card-title orange-text text-darken-4">Breakfast<i class="material-icons right">close</i></span>
+                  <p class="white-text light "><ul class="white-text"><li>DOSA</li><LI>IDLI</LI></ul></p>
+                  <p class="order_now"><a href="#"  onclick="toggleModal();" class="order">Order now!</a></p>
+                </div>
+              </div>
+                       
+        </div>
+        <div  class="col s12 m12 l4" style="padding: 50px 20px;">
+            <div class="card card-size">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/food4.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">LAUNCH<i class="material-icons right">more_vert</i></span>
+                  
+                </div>
+                <div class="card-reveal black">
+                  <span class="card-title orange-text text-darken-4">LAUNCH<i class="material-icons right">close</i></span>
+                  <p class="white-text light "><ul class="white-text"><li>MEALS</li><LI>BIRIYANI</LI></ul></p>
+                  <p class="order_now"><a href="#" onclick="toggleModal();" class="order">Order now!</a></p>
+                </div>
+              </div>
+        </div>
+        <div class="col s12 m12 l4" style="padding: 50px 20px;">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/edit.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">DINNER<i class="material-icons right">more_vert</i></span>
+                  
+                </div>
+                <div class="card-reveal black">
+                  <span class="card-title orange-text text-darken-4">DINNER<i class="material-icons right">close</i></span>
+                  <p class="white-text light "><ul class="white-text"><li>ROOTI</li><LI>PARATA</LI></ul></p>
+                  <p class="order_now"><a href="#" onclick="toggleModal();" class="order">Order now!</a></p>
+                </div>
+              </div>
+        </div>
+        </div>
+    </section>
+    <!-- Menu Ends -->
+    <!-- Parallax Starts -->
+    <!-- <section class="fparallax">
+        <div class="parallax-container">
+            <div class="parallax"><img src="images/food1.png"></div>
+          </div>
+    </section> -->
+    <!-- Parallax Endss -->
+    <!-- About Starts -->
+    <section class="fabout">
+        <div class="section white center about">
+            <div class="row container ">
+                <h2 class="header">About us</h2>
+                <p class="black-text darken-3 center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestias maxime quis odio cumque culpa error facere incidunt qui provident sunt dignissimos similique quas ratione recusandae assumenda quibusdam, laudantium quia, sed ullam modi hic numquam soluta? Quo dolorum natus a molestias, laudantium ullam temporibus officia maiores sequi optio reiciendis cum possimus repellendus deserunt quas suscipit earum reprehenderit quisquam cupiditate voluptate repellat laborum nemo! Aperiam magnam ipsa ab. Hic deleniti consequatur molestias voluptas amet aliquid, incidunt fuga non omnis provident iusto harum mollitia quae, itaque nam nostrum sed! Similique quisquam suscipit distinctio illo impedit blanditiis in doloribus expedita inventore molestiae optio sint eveniet commodi, odit laboriosam, facere saepe, explicabo labore voluptas asperiores iste nam sequi amet tempora. In fuga laborum alias similique at aspernatur quae facilis quasi. Placeat nemo porro omnis!
+                </p>
+                <a href="#" class="btn waves-effect waves-light" style="background-color: black; margin-top: 20px;">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!-- About Ends -->
+    <!-- Serivices Starts -->
+    <section class="fservices">
+        <div class="row" style="padding-left: 50px; padding-right: 50px;">
+            <h2 class="header center orange-text">Our Services</h2>
+            <div class="col s12 l4 center" style="padding: 50px;">
+                <i class="large material-icons icon-coffee ">restaurant_menu</i>
+                <h5 class="header white-text">Dining</h5>
+            </div>
+            <div class="col s12 l4 center" style="padding: 50px;">
+                <i class="large material-icons icon-coffee ">celebration</i>
+                <h5 class="header white-text">Celebration Hall</h5>
+            </div>
+            <div class="col s12 l4 center" style="padding: 50px;">
+                <i class="large material-icons icon-coffee  ">local_parking</i>
+                <h5 class="header white-text">Local Parking</h5>
+            </div>
+        </div>
+        
+
+    </section>
+    <!-- Services Ends -->
+    <!-- Customer Reviews Starts -->
+    <section class="freviews">
+        <div class="section  center">
+            <h3 class="header orange-text">Customer Reviews</h3>
+            <div class="carousel myreviews" style="margin-bottom: 30px;">
+                <a href="#" class="carousel-item">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card-panel black customer">
+                                <span class="white-text">John</span>
+                                <p class="skyblue-text" >"Nice Food"</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="carousel-item">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card-panel black customer">
+                                <span class="white-text">Ram</span>
+                                <p class="skyblue-text" >"Nice Hospitality"</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="carousel-item">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card-panel black customer">
+                                <span class="white-text">Ram</span>
+                                <p class="skyblue-text" >"Nice Hospitality"</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                 
+    </section>
+    <!-- Customer Reviews Ends -->
+    <!-- Message Box Starts -->
+    <section  class="fmessage" style="margin:50px">
+        <h3 class="orange-text center header" style="padding-bottom: 25px;">Message Us</h3>
+        <div  class="row container  message">
+            <div class="col s12 l8">
+                <h5 class="header black-text">Drop a Message</h5>
+                <div class="input-field col s12  l12 input">
+                    <i class="material-icons prefix black-text">mail</i>
+                    <textarea id="icon_prefix2" class="materialize-textarea black-text"></textarea>
+                    <label for="icon_prefix2" class="black-text">Enter Your Mail</label>
+                  </div>
+                  <div class="input-field col s12 l12 input">
+                    <textarea id="textarea2" class="materialize-textarea black-text" data-length="120"></textarea>
+                    <label for="textarea2" class="black-text">Type a Message</label>
+                  </div>
+                  <a href="#"class="btn waves-effect waves-red black btn-send" onclick="toggleModal();">Send</a>
+                
+            </div>
+            <div class="col msg-img l4">
+                <img src="./images/edit.png" height="260" width="100%" style="margin-top: 20px;margin-bottom: 20px;" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Message box Ends -->
+    <!-- Footer Starts -->
+    <section class="footer white">
+        <footer class="footer-one">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h4 class="black-text">Contact us</h4>
+                        <p class="grey-text">
+                            ABC 504, India
+                        </p>
+                        <p class="grey-text">
+                            +91 999999999
+                        </p>
+                    </div>
+                    <div class="col l6 s12">
+                        <h4 class="black-text">Social Media</h4>
+                        <ul>
+                            <li><a href="#"  onclick ="toggleModal();" class="grey-text">Facebook</a></li>
+                            <li><a href="#" onclick ="toggleModal();"  class="grey-text">Instagram</a></li>
+                            <li><a href="#" onclick ="toggleModal();"  class="grey-text">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row footer-two">
+                    <div class="col l6 s12 grey-text">
+                        <p class="blak-text">&copy;srihari</p>
+                    </div>
+                    <div class="col l6 s12">
+                        <p class="grey-text">designedby srihari</p>
+                    </div>
+                </div>
+            </div>
+           
+            
+        </footer>
+        
+    </section>
+    <!-- Footer Ends -->
+
+    <!-- when we click on any link the alert box appear -->
+    <section class="infomodal">
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <h4 id="info-modal-headinng" class="orange-text">Link Disabled</h4>
+                <p id="info-modal-content">Sorry All links are disabled now</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-close waves-effect btn-flat red-text">Close</a>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha512-k2WPPrSgRFI6cTaHHhJdc8kAXaRM4JBFEDo1pPGGlYiOyv4vnA0Pp0G5XMYYxgAPmtmv/IIaQA6n5fLAyJaFMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Materialize css script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- js file -->
+    <script src="js/index.js"></script>
+    <!-- aos css script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+</body>
+</html>

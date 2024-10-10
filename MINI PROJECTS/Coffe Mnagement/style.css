@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background:url(./default.jpg);
+    background-size:cover;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background: transparent;
+    padding: 20px;
+   
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: left;
+    color: #000000e1;
+    
+}
+
+.greeting {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    display: none;
+    color: #ffffff;
+    animation: sparkle 1s infinite alternate;
+}
+
+@keyframes sparkle {
+    0% { text-shadow: 0 0 5px #ff7300; }
+    100% { text-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00; }
+}
+
+.menu, .order {
+    margin-top: 20px;
+    font-size: 15PX;
+    
+}
+
+.menu h2, .order h2 {
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 30PX;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+    
+    
+}
+
+li {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 20PX;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fefefe;
+    color: black;
+}
+
+.total {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#place-order {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+}
